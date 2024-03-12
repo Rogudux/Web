@@ -1,0 +1,131 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+@import url(https://db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular);
+@font-face {
+    font-family: "DINNextW1G-Regular";
+    src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot");
+    src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular")format("svg");
+}
+
+.rectangulo-inicio{
+    background-color: rgb(13, 22, 39);
+    width: 1676px;
+    height: 80px;
+    position: absolute;
+    z-index: 1000;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.texto-sobre-video{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ece8e1;
+}
+
+#texto-valo{
+    font-family: 'VALORANT', sans-serif;
+    font-size: 9em;
+}
+#vs{
+    font-family:"DINNextW1G-Regular";
+    font-size:medium;
+}
+#boton-juega{
+    height: 60px;
+    width: 250px;
+    background-color: rgb(242, 81, 81);
+    font-family: "DINNextW1G-Regular";
+    color: #ffffff;
+    border: none;
+}
+#boton-juega:hover {
+    background-color: rgb(13, 22, 39);
+    transition: 0.3s 
+}
+.linea-recta-derecha {
+    position: fixed;
+    top: 0;
+    right: 215px;
+    height: 100%;
+    width: 1px; 
+    background-color: #aeaaaa; 
+    z-index: 999; 
+}
+.linea-recta-izquierda {
+    position: fixed;
+    top: 0;
+    left: 215px;
+    height: 100%;
+    width: 1px; 
+    background-color: #aeaaaa; 
+    z-index: 989;
+}
+.linea-recta-enmedio {
+    position: fixed;
+    top: 0;
+    left: 525px;
+    height: 100%;
+    width: 1px; 
+    background-color: #aeaaaa; 
+    z-index: 989; 
+}
+.rectangulo-noticias{
+    background-color: #ece8e1;
+    width: 1676px;
+    height: 500px;
+    position: absolute;
+    transform: translate(0%, -100%);
+    
+}
+.cuadro-noticias{
+    margin-left: 215px;
+    margin-top: 50px;
+    z-index: 990;
+}
+
+#noticias{
+    font-size: 4em;
+    color: rgb(242, 81, 81);
+    font-family: "Roboto", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+
+}
+#ir{
+    position: absolute;
+    right: 235px;
+    top: 70px;
+    color: rgb(242, 81, 81);
+    font-family: "DINNextW1G-Regular";
+}
+.card{
+    font-family: "DINNextW1G-Regular";
+    margin-top: -20px;
+    margin-right: 40px;
+
+}
+.card-body{
+    background-color: #ece8e1;
+    border-color: #ece8e1;
+}
+
+.fecha-peque{
+    font-size: smaller;
+}
+.texto-peque{
+    font-size: smaller;
+    color: rgb(242, 81, 81);
+    position: absolute;
+    left: 80px;
+    top: 225px;
+}
+

@@ -10,6 +10,10 @@
     url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular")format("svg");
 }
 
+body{
+    background-color: #aeaaaa;
+}
+
 .rectangulo-inicio{
     background-color: rgb(13, 22, 39);
     width: 1676px;
@@ -37,13 +41,14 @@
 }
 #vs{
     font-family:"DINNextW1G-Regular";
-    font-size:medium;
+    font-size:large;
 }
 #boton-juega{
     height: 60px;
     width: 250px;
     background-color: rgb(242, 81, 81);
-    font-family: "DINNextW1G-Regular";
+    font-weight: bold;
+    font-size: 14px;
     color: #ffffff;
     border: none;
 }
@@ -52,10 +57,10 @@
     transition: 0.3s 
 }
 .linea-recta-derecha {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 215px;
-    height: 100%;
+    height: 685px;
     width: 1px; 
     background-color: #aeaaaa; 
     z-index: 999; 
@@ -67,13 +72,13 @@
     height: 100%;
     width: 1px; 
     background-color: #aeaaaa; 
-    z-index: 989;
+    z-index: 979;
 }
 .linea-recta-enmedio {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 525px;
-    height: 100%;
+    height: 685px;
     width: 1px; 
     background-color: #aeaaaa; 
     z-index: 989; 
@@ -84,7 +89,7 @@
     height: 500px;
     position: absolute;
     transform: translate(0%, -100%);
-    
+    margin-top: 120px;
 }
 .cuadro-noticias{
     margin-left: 215px;
@@ -93,11 +98,11 @@
 }
 
 #noticias{
-    font-size: 4em;
+    font-size: 5.7em;
     color: rgb(242, 81, 81);
-    font-family: "Roboto", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
 
 }
 #ir{
@@ -105,12 +110,15 @@
     right: 235px;
     top: 70px;
     color: rgb(242, 81, 81);
-    font-family: "DINNextW1G-Regular";
+    font-size: small;
+    font-weight: bold;
 }
 .card{
     font-family: "DINNextW1G-Regular";
     margin-top: -20px;
     margin-right: 40px;
+    margin-bottom: 600px;
+
 
 }
 .card-body{
@@ -118,8 +126,13 @@
     border-color: #ece8e1;
 }
 
+.card-img-top:hover{
+    filter: blur(10px) hue-rotate(90deg)
+}
+
 .fecha-peque{
     font-size: smaller;
+    font-weight: bolder;
 }
 .texto-peque{
     font-size: smaller;
@@ -127,5 +140,199 @@
     position: absolute;
     left: 80px;
     top: 225px;
+    font-weight: bolder;
 }
+
+.card-title{
+    font-weight: bolder;
+}
+
+.contain-fluid{
+    background-color: #ece8e1
+}
+
+
+.imagen-dedo{
+    display: flex;
+    justify-content: center;
+    background-color: #ece8e1;
+}
+
+.texto-imagen{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 240px;
+    text-align:justify;
+    color: white;
+    font-family: "DINNextW1G-Regular";
+}
+
+#letra-confrontacion{
+    font-size: 7em;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+.separacion-imagen-noticias{
+    margin-top: 170px;
+    background-color: #ece8e1
+}
+
+
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #ff4655;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid white;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 16px 100px;
+    color: #fff;
+    background-color: #ff4655;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #ff4655;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #ff4655;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #0f1923;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #ff4655;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+
+  .button_gl {
+    position: relative;
+    display: block;
+    padding: 16px 80px;
+    color: #fff;
+    background-color: #ff4655;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .buttongl::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #ff4655;
+  }
+  
+  .button_gl::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #ff4655;
+    transition: all .2s ease;
+  }
+
 

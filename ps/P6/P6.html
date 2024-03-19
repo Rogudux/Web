@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title> 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body{
+            animation: fondo 5s infinite;
+        }
+        @keyframes fondo{
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: green;
+            }                                                                                                           
+            50%{
+                background-color: rgb(217, 47, 183);
+            }
+            75%{
+                background-color: blueviolet;
+            }
+            100%{
+                background-color: aqua;
+            }
+        }
+        .cuadromovimientoraro{
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            animation: moveralv 10s infinite;
+        }
+        @keyframes moveralv {
+            0%{
+                top: 40px;
+                right: 40px;
+            }
+            25%{
+                top: 200px;
+                left: 300px;
+            }
+            50%{
+                top: 200px;
+                right: 300px;
+            }
+            75%{
+                top: 800px;
+                left: 200px;
+            }
+            100%{
+                top: 400px;
+                right: 570px;
+            }            
+        }
+        .cuadroBlanco1{
+            background-color: white;
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            top: 10px;
+            right: 200px;
+            animation: moverte1 3s infinite;
+        }
+
+        @keyframes moverte1 {
+            from{
+                top: 10px;
+            }
+            to{
+                top: 200px;
+                background-color: red;
+            } 
+        }
+        .cuadroBlanco2{
+            background-color: white;
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            top: 10px;
+            right: 400px;
+            animation: moverte2 3s infinite;
+        }
+        @keyframes moverte2 {
+            from{
+                top: 10px;
+            }
+            to{
+                top: 200px;
+                background-color: green;
+            } 
+        }
+
+        .cuadroBlanco3{
+            background-color: white;
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            top: 10px;
+            right: 600px;
+            animation: moverte3 3s infinite;
+        }
+        @keyframes moverte3 {
+            from{
+                top: 10px;
+            }
+            to{
+                top: 200px;
+
+                background-color: rgb(89, 165, 245);
+            } 
+        }
+        
+        #circulo {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            position: absolute;
+            border-radius: 50%;
+            animation: movercirculo 3s infinite;
+        }
+        @keyframes movercirculo{
+            from {
+                width: 100px;
+                height: 100px;
+            }
+            to{
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cuadroBlanco1"></div>
+    <div class="cuadroBlanco2"></div>
+    <div class="cuadroBlanco3"></div>
+    <div id="circulo"></div>
+
+    <div data-aos="flip-left">
+        <h1>Hola mi gente de youtube </h1>
+    </div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P14</title>
+</head>
+<body>
+    <h1>Practica 14</h1>
+    <p id="nombreCompleto">Este es un párrafo</p>
+
+    <script>
+        let edad = 25;
+        console.log(edad);
+
+        function muestraEdad(miEdad){
+            let edad = miEdad + 10;
+            return edad;
+        } //scope
+
+        console.log(muestraEdad(edad));
+        console.log(edad);
+
+        const pi = 3.1416;
+
+        function area(radio){
+            return radio* radio* pi
+        }
+        console.log(area(12));
+
+
+        function saludar(nombre){
+            return "Hola " + nombre
+        }
+        console.log(saludar("Diego"))
+
+        //Reglas
+        //camelCase - nuevoNombre
+        //pascalCase - NuevoNombre
+        //snake_case - snake_case
+
+        let state = true;
+        let otherState = false;
+        let arrray1 = [3,65,8,4,];
+        let arrray2 = [4,9,54,21];
+        let arrray3 = [5, 97, 51, 3];
+        let arrayBooleans = [true, false, false];
+
+        console.log(state);
+        console.log(arrray2[2]);
+        console.log(arrray2[-2]); //Absolutely unfunctional //Como no hay nada apartir del 0 no regresa na (undefined)
+        console.log(arrayBooleans);
+
+        x= null; 
+        console.log("El resultado es nulo: " + x);
+
+        let nombre = "Diego";
+        let apellidos = "Rojas";
+        let nombreCompleto = "Bienvenido " + nombre + " " + apellidos;
+
+        let cambioParrafo = document.getElementById("nombreCompleto");
+        cambioParrafo.innerHTML = nombreCompleto
+
+
+    </script>
+    
+</body>
+</html>

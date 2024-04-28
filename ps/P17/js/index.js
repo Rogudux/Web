@@ -39,3 +39,15 @@ switch (fecha) {
         console.log("Valor de fecha inválido");
 }
 
+let pelis = [
+    {titulo: "Spider-man", imagen: "https://upload.wikimedia.org/wikipedia/commons/5/52/Spider-Man.jpg"},
+    {titulo: "Matrix", imagen: "https://es.web.img3.acsta.net/medias/nmedia/18/72/16/76/20065616.jpg"},
+    {titulo: "Star wars", imagen: "https://i.blogs.es/1da08b/1366_2000-9-/840_560.jpeg"},
+]
+
+let galeria = document.getElementById("galeria");
+galeria.innerHTML = "";
+for (let peli of pelis){
+    console.log(peli);
+    galeria.innerHTML += `<div class='col-12 col-md-3 text-center'><p>${peli.titulo}</p><img src='${peli.imagen}' alt='Imagen de ${peli.titulo}' class='img-fluid'></div>`;
+}

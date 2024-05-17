@@ -39,7 +39,7 @@
 
                     <div class="row py-2">
                         <div class="col-12">
-                            <label for="nombre">Nombre:</label>
+                            <label for="nombre">Tarea:</label>
                             <input placeholder="Nombre completo" type="text" id="nombre" required name="nombre" class="form-control">
                         </div>
                     </div>
@@ -58,11 +58,82 @@
                         </div>
                     </div>
 
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="nombre">Imagen:</label>
+                            <input placeholder="Ingresa la URL de la imagen" type="text" id="imagen" required name="imagen" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="nombre">Video:</label>
+                            <input placeholder="Ingresa la URL incorporada del video" type="text" id="video" required name="video" class="form-control">
+                        </div>
+                    </div>
+
                 </div>
                 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit"  class="btn btn-primary">Agregar tarea</button>
+                    <button type="button" id="cancelar" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" id="guardar" class="btn btn-primary">Agregar tarea</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form name="formularioEditar" id="formularioEditar">
+        <div class="modal fade" id="exampleModalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar tarea</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="nombre">Tarea:</label>
+                            <input placeholder="Nombre completo" type="text" id="nombreEditada" required name="nombre" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" required name="fecha" id="fechaEditada" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="descripcion">Descripción:</label>
+                            <textarea placeholder="Descripcion breve de tu tarea" name="descripcion" rows="5" id="descripcionEditada" required class="form-control"></textarea>  
+                        </div>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="nombre">Imagen:</label>
+                            <input placeholder="Ingresa la URL de la imagen" type="text" id="imagenEditada" required name="imagenEditada" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <label for="nombre">Video:</label>
+                            <input placeholder="Ingresa la URL del video" type="text" id="videoEditada" required name="videoEditada" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" id="cancelarEditada" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar edicion</button>
+                    <button type="submit" id="guardarEditada" class="btn btn-primary">Editar tarea</button>
                 </div>
                 </div>
             </div>
@@ -74,3 +145,4 @@
     
 </body>
 </html>
+

@@ -82,14 +82,14 @@ let mostrarTareas = () =>{
 
             <div class = "col-2 col-md-2 border text-center p-3">
                 <div class = "row py-1">
-                    <div class = "col-12 col-md-2  text-center p-3">
+                    <div class = "col-12 col-md-12  text-center p-3">
                         <button  data-bs-toggle="modal" onClick= cargarEdicion(${indice}) data-bs-target="#exampleModalEditar"  id="editarTarea" class=" btn btn-primary form-control rounded-pill">Editar <i class="bi bi-pencil-fill"></i></button>
                     </div>
                     
                 </div>
 
                 <div class = "row py-1">
-                    <div class = "col-12 col-md-2 text-center p-3">
+                    <div class = "col-12 col-md-12 text-center p-3">
                         <button id="borrarTarea" onClick=borrarTareaa(this,${indice}) class="btn btn-danger form-control rounded-pill" >Borrar <i class="bi bi-trash3-fill"></i></button>
                     </div>
                 </div>

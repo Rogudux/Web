@@ -55,50 +55,42 @@ let subir = () =>{
 };
 
 
-let mostrarTareas = () =>{
-    listaTareas.innerHTML = ""
-    tareas.forEach((tarea, indice) =>{
-
+let mostrarTareas = () => {
+    listaTareas.innerHTML = "";
+    tareas.forEach((tarea, indice) => {
         listaTareas.innerHTML += `
-        <div class = "row">
-            <div class = "col-2 col-md-2 col-sm-3 col-xs-3 border p-3">
-                <p> ${tarea.nombre}</p> 
+        <div class="row">
+            <div class="col-12 col-md-2 col-sm-3 border p-3">
+                <p>${tarea.nombre}</p>
             </div>
-
-            <div class = "col-1 col-md-1 col-sm-2 col-xs-2 border p-3">
-                <p> ${tarea.fecha}</p> 
+            <div class="col-12 col-md-1 col-sm-2 border p-3">
+                <p>${tarea.fecha}</p>
             </div>
-
-            <div class = "col-2 col-md-2 col-sm-3 col-xs-3 border p-3">
-                <p> ${tarea.descripcion}</p> 
+            <div class="col-12 col-md-2 col-sm-3 border p-3">
+                <p>${tarea.descripcion}</p>
             </div>
-
-            <div class = "col-2 col-md-2 col-sm-4 col-xs-4 border p-3">
-                <img src="${tarea.imagen}" class="object-fit-sm-contain border rounded img-fluid" alt="...">
+            <div class="col-12 col-md-2 col-sm-4 border p-3">
+                <img src="${tarea.imagen}" class="img-fluid border rounded" alt="...">
             </div>
-            <div class = "col-3 col-md-3 col-sm-8 col-xs-8 border p-3 content-fluid">
-                <iframe src="${tarea.video}" class= "autoplay car-video" width="100%" height="200" allow="allowfullscreen" ></iframe>
+            <div class="col-12 col-md-3 col-sm-8 border p-3">
+                <iframe src="${tarea.video}" class="w-100" height="200" allow="allowfullscreen"></iframe>
             </div>
-
-            <div class = "col-2 col-md-2 col-sm-4 col-xs-4 border text-center p-3">
-                <div class = "row py-1">
-                    <div class = "col-12 col-md-12 col-sm-12 col-xs-12 text-center p-3">
-                        <button  data-bs-toggle="modal" onClick= cargarEdicion(${indice}) data-bs-target="#exampleModalEditar"  id="editarTarea" class=" btn btn-primary form-control rounded-pill">Editar <i class="bi bi-pencil-fill"></i></button>
-                    </div>
-                    
-                </div>
-
-                <div class = "row py-1">
-                    <div class = "col-12 col-md-12 col-sm-12 col-xs-12 text-center p-3">
-                        <button id="borrarTarea" onClick=borrarTareaa(this,${indice}) class="btn btn-danger form-control rounded-pill" >Borrar <i class="bi bi-trash3-fill"></i></button>
+            <div class="col-12 col-md-2 col-sm-4 border text-center p-3">
+                <div class="row py-1">
+                    <div class="col-12 text-center p-3">
+                        <button data-bs-toggle="modal" onClick=cargarEdicion(${indice}) data-bs-target="#exampleModalEditar" id="editarTarea" class="btn btn-primary form-control rounded-pill">Editar <i class="bi bi-pencil-fill"></i></button>
                     </div>
                 </div>
-            </div> 
+                <div class="row py-1">
+                    <div class="col-12 text-center p-3">
+                        <button id="borrarTarea" onClick=borrarTareaa(this,${indice}) class="btn btn-danger form-control rounded-pill">Borrar <i class="bi bi-trash3-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+    });
+};
 
-        </div>
-        `
-    })
-}
 
 let borrarTarea = document.getElementById('borrarTarea');
 
